@@ -1,0 +1,4 @@
+\contentsline {chapter}{\tocchapter {Chapter}{1}{Introduction}}{1}{chapter.1}
+\contentsline {chapter}{\tocchapter {Chapter}{2}{Subspaces as closures}}{3}{chapter.2}
+\contentsline {chapter}{\tocchapter {\chaptername }{}{Bibliography}}{7}{chapter*.1}
+\contentsline {chapter}{\tocchapter {\chaptername }{}{Intrinsics}}{9}{chapter*.2}
