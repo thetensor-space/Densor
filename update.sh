@@ -11,7 +11,7 @@ cd "$DIR"
 
 # Update main package
 echo "Updating Densor package."
-git -q pull origin master 
+git pull -q origin master 
 
 echo "Now updating dependencies."
 
@@ -23,7 +23,7 @@ then
 else
     echo "Could not find CSS, downloading..."
     cd "$PKGDIR"
-    git -q clone https://github.com/algeboy/CSS
+    git clone -q https://github.com/algeboy/CSS
     echo "Installing CSS..."
     sh "$PKGDIR/CSS/install.sh"
 fi
@@ -35,7 +35,7 @@ then
 else
     echo "Could not find TensorSpace, downloading..."
     cd "$PKGDIR"
-    git -q clone https://github.com/algeboy/TensorSpace
+    git clone -q https://github.com/algeboy/TensorSpace
     echo "Installing TensorSpace..."
     sh "$PKGDIR/TensorSpace/install.sh"
 fi

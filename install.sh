@@ -24,7 +24,7 @@ then
 else
     echo "Could not find CSS, downloading..."
     cd "$PKGDIR"
-    git -q clone https://github.com/algeboy/CSS
+    git clone -q https://github.com/algeboy/CSS
 fi
 
 
@@ -36,7 +36,7 @@ then
 else
     echo "Could not find TensorSpace, downloading..."
     cd "$PKGDIR"
-    git -q clone https://github.com/algeboy/TensorSpace
+    git clone -q https://github.com/algeboy/TensorSpace
 fi
 
 echo "Dependencies downloaded."
