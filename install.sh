@@ -49,7 +49,8 @@ echo "Dependencies downloaded."
 if [ -f "$START" ]
 then
     echo "Found a Magma start file"
-    for A in "$ATTACH" "$ATTACH2" "$ATTACH3" do
+    for A in "$ATTACH" "$ATTACH2" "$ATTACH3" 
+    do
         if grep -Fxq "$A" "$START"
         then
             echo "Already installed"
@@ -61,7 +62,8 @@ then
 else
     echo "Creating a Magma start file: $START"
     echo "// Created by an install file for Magma start up." > "$START"
-    for A in "$ATTACH" "$ATTACH2" "$ATTACH3" do
+    for A in "$ATTACH" "$ATTACH2" "$ATTACH3" 
+    do
         echo "$A" >> "$START"
     done
     echo "Successfully installed"
